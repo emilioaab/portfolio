@@ -1,0 +1,21 @@
+{
+  "Hero": {
+    "title": "[EN] Hero section placeholder",
+    "subtitle": "[EN] Curious engineer, creative problem solver."
+  },
+  "FlagshipProject": {
+    "title": "[EN] Flagship project placeholder (C.I.R.A)"
+  },
+  "OngoingProjects": {
+    "title": "[EN] Ongoing projects placeholder"
+  },
+  "About": {
+    "title": "[EN] About / diverse curiosity placeholder"
+  },
+  "TechStack": {
+    "title": "[EN] Tech stack placeholder"
+  },
+  "Contact": {
+    "title": "[EN] Contact placeholder"
+  }
+}
