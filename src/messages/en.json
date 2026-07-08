@@ -15,8 +15,15 @@
     "eyebrow": "whoami",
     "name": "Emil Abdumalikov",
     "tagline": "Software engineering student specializing in cybersecurity — equally at home in x86 assembly and a Next.js frontend, building secure systems and creative software across the stack.",
-    "ctaPrimary": "View Work",
-    "ctaSecondary": "Get in Touch"
+    "commandsLabel": "available_commands",
+    "commandWork": "view-work",
+    "commandWorkDesc": "featured project",
+    "commandContact": "contact",
+    "commandContactDesc": "get in touch",
+    "notFound": "command not found: {input}",
+    "helpHint": "try: work · projects · about · stack · contact",
+    "sudoEasterEgg": "Permission denied. Nice try though.",
+    "promptAriaLabel": "Optional command input — press Enter to run, or use the links above to navigate"
   },
   "FlagshipProject": {
     "heading": "Flagship Project",

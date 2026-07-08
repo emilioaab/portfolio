@@ -15,8 +15,15 @@
     "eyebrow": "whoami",
     "name": "אמיל אבדומליקוב",
     "tagline": "סטודנט להנדסת תוכנה עם התמחות באבטחת סייבר — בבית גם בקוד אסמבלי ברמה נמוכה וגם בפרונטאנד של Next.js, בונה מערכות מאובטחות ותוכנה יצירתית לאורך כל הסטאק.",
-    "ctaPrimary": "צפייה בעבודות",
-    "ctaSecondary": "יצירת קשר"
+    "commandsLabel": "available_commands",
+    "commandWork": "view-work",
+    "commandWorkDesc": "הפרויקט המוביל",
+    "commandContact": "contact",
+    "commandContactDesc": "יצירת קשר",
+    "notFound": "הפקודה לא נמצאה: {input}",
+    "helpHint": "נסה: work · projects · about · stack · contact",
+    "sudoEasterEgg": "הגישה נדחתה. ניסיון יפה בכל זאת.",
+    "promptAriaLabel": "שדה פקודה אופציונלי — הקש Enter להרצה, או השתמש בקישורים למעלה"
   },
   "FlagshipProject": {
     "heading": "פרויקט הדגל",

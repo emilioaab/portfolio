@@ -1,8 +1,8 @@
 import { useTranslations } from "next-intl";
 import { Reveal } from "@/components/ui/Reveal";
-import { Button } from "@/components/ui/Button";
 import { HeroBackground } from "./HeroBackground";
 import { HeroCanvas } from "@/components/three/HeroCanvas";
+import { TerminalPrompt } from "./TerminalPrompt";
 
 export function Hero() {
   const t = useTranslations("Hero");
@@ -34,15 +34,8 @@ export function Hero() {
         </p>
       </Reveal>
 
-      <Reveal delay={0.3}>
-        <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
-          <Button href="#flagship-project" showArrow>
-            {t("ctaPrimary")}
-          </Button>
-          <Button href="#contact" variant="secondary">
-            {t("ctaSecondary")}
-          </Button>
-        </div>
+      <Reveal delay={0.3} className="flex w-full flex-col items-center">
+        <TerminalPrompt />
       </Reveal>
     </section>
   );
