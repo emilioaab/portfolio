@@ -58,6 +58,16 @@
     }
   },
   "Contact": {
-    "title": "[EN] Contact placeholder"
+    "heading": "Let's Connect",
+    "intro": "[TODO: closing statement / call to action framing]",
+    "ctaPrimary": "Send an Email",
+    "links": {
+      "email": "Email",
+      "github": "GitHub",
+      "linkedin": "LinkedIn"
+    }
+  },
+  "Footer": {
+    "line": "© {year} — designed & built by [TODO: Your Name]"
   }
 }

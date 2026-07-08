@@ -4,6 +4,7 @@ import { Geist, Geist_Mono, Rubik } from "next/font/google";
 import { notFound } from "next/navigation";
 import { routing, rtlLocales, type Locale } from "@/i18n/routing";
 import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/layout/Footer";
 import "../globals.css";
 
 const geistSans = Geist({
@@ -55,6 +56,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider locale={locale}>
           <Header />
           {children}
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>
