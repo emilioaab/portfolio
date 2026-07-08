@@ -22,10 +22,40 @@
     }
   },
   "About": {
-    "title": "[HE] מציין מקום לסקציית אודות / סקרנות מגוונת"
+    "heading": "מעבר לקוד",
+    "intro": "[TODO: שורת פתיחה — מהנדס אחד, הרבה פנים]",
+    "facets": {
+      "cybersecurity": {
+        "title": "אבטחת סייבר",
+        "description": "[TODO]"
+      },
+      "lowLevel": {
+        "title": "תכנות ברמה נמוכה",
+        "description": "[TODO]"
+      },
+      "fullStack": {
+        "title": "פיתוח פול-סטאק",
+        "description": "[TODO]"
+      },
+      "music": {
+        "title": "מוזיקה — תופים וגיטרה",
+        "description": "[TODO]"
+      },
+      "fitness": {
+        "title": "כושר גופני",
+        "description": "[TODO]"
+      }
+    }
   },
   "TechStack": {
-    "title": "[HE] מציין מקום למחסנית הטכנולוגית"
+    "heading": "מחסנית טכנולוגית",
+    "intro": "[TODO: שורת פתיחה על הסטאק]",
+    "categories": {
+      "languages": "שפות תכנות",
+      "cloud": "ענן ותשתיות",
+      "security": "אבטחה",
+      "web": "פיתוח ווב"
+    }
   },
   "Contact": {
     "title": "[HE] מציין מקום ליצירת קשר"

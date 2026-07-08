@@ -22,10 +22,40 @@
     }
   },
   "About": {
-    "title": "[EN] About / diverse curiosity placeholder"
+    "heading": "Beyond the Code",
+    "intro": "[TODO: intro framing — one engineer, many facets]",
+    "facets": {
+      "cybersecurity": {
+        "title": "Cybersecurity",
+        "description": "[TODO]"
+      },
+      "lowLevel": {
+        "title": "Low-Level Systems",
+        "description": "[TODO]"
+      },
+      "fullStack": {
+        "title": "Full-Stack Development",
+        "description": "[TODO]"
+      },
+      "music": {
+        "title": "Music — Drums & Guitar",
+        "description": "[TODO]"
+      },
+      "fitness": {
+        "title": "Fitness",
+        "description": "[TODO]"
+      }
+    }
   },
   "TechStack": {
-    "title": "[EN] Tech stack placeholder"
+    "heading": "Tech Stack",
+    "intro": "[TODO: intro line about the stack]",
+    "categories": {
+      "languages": "Languages",
+      "cloud": "Cloud & Infra",
+      "security": "Security",
+      "web": "Web"
+    }
   },
   "Contact": {
     "title": "[EN] Contact placeholder"
