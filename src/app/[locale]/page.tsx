@@ -1,4 +1,7 @@
 import { useTranslations } from "next-intl";
+import { Reveal } from "@/components/ui/Reveal";
+import { Card } from "@/components/ui/Card";
+import { Badge } from "@/components/ui/Badge";
 
 const sections = [
   "Hero",
@@ -15,13 +18,13 @@ export default function Home() {
   return (
     <main className="flex flex-1 flex-col items-center gap-6 px-8 py-10 sm:px-10">
       <div className="flex w-full max-w-2xl flex-col gap-6">
-        {sections.map((section) => (
-          <section key={section} className="rounded-lg border border-border bg-surface p-6">
-            <p className="font-mono text-xs uppercase tracking-wide text-muted">
-              {section}
-            </p>
-            <p className="mt-2 text-lg text-foreground">{t(`${section}.title`)}</p>
-          </section>
+        {sections.map((section, index) => (
+          <Reveal key={section} delay={index * 0.05}>
+            <Card hover>
+              <Badge>{section}</Badge>
+              <p className="mt-3 text-lg text-foreground">{t(`${section}.title`)}</p>
+            </Card>
+          </Reveal>
         ))}
       </div>
     </main>
