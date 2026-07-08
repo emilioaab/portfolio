@@ -3,11 +3,24 @@
 import { type FormEvent, useState } from "react";
 import { useTranslations } from "next-intl";
 import { COMMAND_TARGETS } from "@/content/terminal";
+import { socialLinks } from "@/content/social";
 import { Ltr } from "@/components/ui/Ltr";
 
+const linkedinHref = socialLinks.find((link) => link.icon === "linkedin")?.href ?? "#";
+
 const PRIMARY_COMMANDS = [
-  { command: "work", labelKey: "commandWork", descriptionKey: "commandWorkDesc" },
-  { command: "contact", labelKey: "commandContact", descriptionKey: "commandContactDesc" },
+  {
+    command: "contact",
+    labelKey: "commandContact",
+    descriptionKey: "commandContactDesc",
+    href: undefined as string | undefined,
+  },
+  {
+    command: "linkedin",
+    labelKey: "commandLinkedin",
+    descriptionKey: "commandLinkedinDesc",
+    href: linkedinHref,
+  },
 ] as const;
 
 function navigateTo(id: string) {
@@ -61,13 +74,10 @@ export function TerminalPrompt() {
       </p>
 
       <div className="flex w-full flex-col">
-        {PRIMARY_COMMANDS.map((entry, index) => (
-          <button
-            key={entry.command}
-            type="button"
-            onClick={() => navigateTo(COMMAND_TARGETS[entry.command])}
-            className="group flex w-full rounded-md px-2 py-2 text-start font-mono text-sm transition-colors hover:bg-surface"
-          >
+        {PRIMARY_COMMANDS.map((entry, index) => {
+          const rowClassName =
+            "group flex w-full rounded-md px-2 py-2 text-start font-mono text-sm transition-colors hover:bg-surface";
+          const content = (
             <span dir="ltr" className="flex items-center gap-3">
               <span className="text-accent">[{index + 1}]</span>
               <span className="text-foreground">{t(entry.labelKey)}</span>
@@ -75,8 +85,33 @@ export function TerminalPrompt() {
                 → {t(entry.descriptionKey)}
               </span>
             </span>
-          </button>
-        ))}
+          );
+
+          if (entry.href) {
+            return (
+              <a
+                key={entry.command}
+                href={entry.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={rowClassName}
+              >
+                {content}
+              </a>
+            );
+          }
+
+          return (
+            <button
+              key={entry.command}
+              type="button"
+              onClick={() => navigateTo(COMMAND_TARGETS[entry.command])}
+              className={rowClassName}
+            >
+              {content}
+            </button>
+          );
+        })}
       </div>
 
       <form onSubmit={handleSubmit} dir="ltr" className="flex w-full items-center gap-2 px-2">

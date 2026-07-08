@@ -19,10 +19,10 @@
     "location": "BEER-SHEVA, IL",
     "tagline": "סטודנט להנדסת תוכנה עם התמחות באבטחת סייבר — בבית גם בקוד אסמבלי ברמה נמוכה וגם בפרונטאנד של Next.js, בונה מערכות מאובטחות ותוכנה יצירתית לאורך כל הסטאק.",
     "commandsLabel": "available_commands",
-    "commandWork": "view-work",
-    "commandWorkDesc": "הפרויקט המוביל",
     "commandContact": "contact",
     "commandContactDesc": "יצירת קשר",
+    "commandLinkedin": "linkedin",
+    "commandLinkedinDesc": "צפייה בפרופיל",
     "notFound": "הפקודה לא נמצאה: {input}",
     "helpHint": "נסה: work · projects · about · stack · contact",
     "sudoEasterEgg": "הגישה נדחתה. ניסיון יפה בכל זאת.",
@@ -96,6 +96,6 @@
     }
   },
   "Footer": {
-    "line": "© {year} — עוצב ונבנה על ידי אמיל אבדומליקוב"
+    "line": "© {year} אמיל אבדומליקוב"
   }
 }

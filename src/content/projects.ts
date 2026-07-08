@@ -14,7 +14,7 @@ export type FlagshipProject = {
 export const flagshipProject: FlagshipProject = {
   name: "C.I.R.A",
   fullName: "Cloud Incident Response Analyzer",
-  tags: ["Cloud Forensics", "Security", "Python", "AWS"],
+  tags: ["Cloud Forensics", "Security", "Python", "AWS", "PostgreSQL"],
   links: [
     { label: "GitHub", href: "#" },
     { label: "Live Demo", href: "#" },

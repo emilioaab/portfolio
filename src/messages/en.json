@@ -19,10 +19,10 @@
     "location": "BEER-SHEVA, IL",
     "tagline": "Software engineering student specializing in cybersecurity — equally at home in x86 assembly and a Next.js frontend, building secure systems and creative software across the stack.",
     "commandsLabel": "available_commands",
-    "commandWork": "view-work",
-    "commandWorkDesc": "featured project",
     "commandContact": "contact",
     "commandContactDesc": "get in touch",
+    "commandLinkedin": "linkedin",
+    "commandLinkedinDesc": "view profile",
     "notFound": "command not found: {input}",
     "helpHint": "try: work · projects · about · stack · contact",
     "sudoEasterEgg": "Permission denied. Nice try though.",
@@ -96,6 +96,6 @@
     }
   },
   "Footer": {
-    "line": "© {year} — designed & built by Emil Abdumalikov"
+    "line": "© {year} EMIL ABDUMALIKOV"
   }
 }
