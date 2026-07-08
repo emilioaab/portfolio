@@ -6,13 +6,13 @@ export function HeroPortrait() {
   const t = useTranslations("Hero");
 
   return (
-    <WindowFrame title="emil.jpg" className="w-56 sm:w-64">
+    <WindowFrame title="emil.jpg" className="w-64 sm:w-80">
       <div className="relative aspect-square">
         <Image
           src="/images/emil-profile.jpg"
           alt="Emil Abdumalikov"
           fill
-          sizes="256px"
+          sizes="320px"
           className="object-cover"
           priority
         />
