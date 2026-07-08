@@ -37,17 +37,19 @@ export function ProjectVideo({ mp4Src, webmSrc, poster, className }: ProjectVide
   }, []);
 
   return (
-    <video
-      ref={videoRef}
-      className={cn("h-full w-full object-cover", className)}
-      poster={poster}
-      muted
-      loop
-      playsInline
-      preload="metadata"
-    >
-      {webmSrc && <source src={webmSrc} type="video/webm" />}
-      <source src={mp4Src} type="video/mp4" />
-    </video>
+    <div className={cn("flex h-full w-full items-center justify-center p-4", className)}>
+      <video
+        ref={videoRef}
+        className="aspect-[1280/582] w-full rounded-md object-cover"
+        poster={poster}
+        muted
+        loop
+        playsInline
+        preload="metadata"
+      >
+        {webmSrc && <source src={webmSrc} type="video/webm" />}
+        <source src={mp4Src} type="video/mp4" />
+      </video>
+    </div>
   );
 }

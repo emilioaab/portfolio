@@ -50,7 +50,7 @@ export function FlagshipProject() {
                 mp4Src="/videos/cira-demo.mp4"
                 webmSrc="/videos/cira-demo.webm"
                 poster="/videos/cira-demo-poster.jpg"
-                className="aspect-[1280/582] md:border-s md:border-border"
+                className="md:border-s md:border-border"
               />
             </div>
           </WindowFrame>
