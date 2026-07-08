@@ -42,7 +42,7 @@ export function HeroCanvas() {
   if (!enabled) return null;
 
   return (
-    <div className="hero-fade-mask animate-fade-in absolute inset-0 z-[-5]">
+    <div className="hero-fade-mask animate-fade-in absolute inset-0 -z-20">
       <NetworkScene />
     </div>
   );
