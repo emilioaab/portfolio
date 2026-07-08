@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import { Reveal } from "@/components/ui/Reveal";
+import { Typewriter } from "@/components/ui/Typewriter";
 import { HeroBackground } from "./HeroBackground";
 import { HeroCanvas } from "@/components/three/HeroCanvas";
 import { TerminalPrompt } from "./TerminalPrompt";
@@ -23,8 +24,17 @@ export function Hero() {
       </Reveal>
 
       <Reveal delay={0.1}>
-        <h1 className="mt-6 text-4xl font-semibold text-foreground sm:text-6xl lg:text-7xl">
-          {t("name")}
+        <h1
+          className="mt-6 text-4xl font-semibold text-foreground sm:text-6xl lg:text-7xl"
+          aria-label={`${t("greeting")} ${t("nameIntro")} ${t("name")}`}
+        >
+          <span aria-hidden="true">
+            <Typewriter
+              segments={[`${t("greeting")} `, `${t("nameIntro")} ${t("name")}`]}
+              startDelay={500}
+            />
+            <span className="animate-blink ms-2 inline-block h-[0.85em] w-[0.5em] translate-y-[0.05em] bg-accent align-middle" />
+          </span>
         </h1>
       </Reveal>
 

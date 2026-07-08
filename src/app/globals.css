@@ -57,15 +57,24 @@ html {
 
 /* Static grid backdrop used behind the Hero — the always-present base
    layer; the WebGL network scene (HeroCanvas) is a progressive
-   enhancement layered on top when supported. Faded via a radial mask
-   so it reads as an accent, not noise. */
+   enhancement layered on top when supported. Both share this vertical
+   fade so neither has a hard edge where the Hero section starts/ends. */
+.hero-fade-mask {
+  mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 82%, transparent 100%);
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 20%,
+    black 82%,
+    transparent 100%
+  );
+}
+
 .hero-grid {
   background-image:
     linear-gradient(to right, var(--border) 1px, transparent 1px),
     linear-gradient(to bottom, var(--border) 1px, transparent 1px);
   background-size: 48px 48px;
-  mask-image: radial-gradient(ellipse 60% 50% at 50% 40%, black 40%, transparent 100%);
-  -webkit-mask-image: radial-gradient(ellipse 60% 50% at 50% 40%, black 40%, transparent 100%);
 }
 
 @keyframes blink {

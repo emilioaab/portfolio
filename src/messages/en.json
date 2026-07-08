@@ -13,6 +13,8 @@
   },
   "Hero": {
     "eyebrow": "whoami",
+    "greeting": "Hello.",
+    "nameIntro": "My name is",
     "name": "Emil Abdumalikov",
     "tagline": "Software engineering student specializing in cybersecurity — equally at home in x86 assembly and a Next.js frontend, building secure systems and creative software across the stack.",
     "commandsLabel": "available_commands",
