@@ -16,6 +16,7 @@
     "greeting": "Hello.",
     "nameIntro": "My name is",
     "name": "Emil Abdumalikov",
+    "location": "BEER-SHEVA, IL",
     "tagline": "Software engineering student specializing in cybersecurity — equally at home in x86 assembly and a Next.js frontend, building secure systems and creative software across the stack.",
     "commandsLabel": "available_commands",
     "commandWork": "view-work",
