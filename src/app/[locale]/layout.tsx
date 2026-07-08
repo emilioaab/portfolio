@@ -28,6 +28,11 @@ const rubik = Rubik({
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
 
+// Statically generated pages bake in build-time values (e.g. the footer's
+// copyright year) — revalidate daily so it stays correct across a New
+// Year's without needing a fresh deploy.
+export const revalidate = 86400;
+
 export async function generateMetadata({
   params,
 }: {
