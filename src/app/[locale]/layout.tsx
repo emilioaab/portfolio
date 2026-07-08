@@ -7,6 +7,7 @@ import { routing, rtlLocales, type Locale } from "@/i18n/routing";
 import { socialLinks } from "@/content/social";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { MobileNav } from "@/components/layout/MobileNav";
 import { BackToTop } from "@/components/ui/BackToTop";
 import "../globals.css";
 
@@ -96,7 +97,7 @@ export default async function LocaleLayout({
       dir={dir}
       className={`${geistSans.variable} ${geistMono.variable} ${rubik.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="flex min-h-full flex-col pb-16 sm:pb-0">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
@@ -106,6 +107,7 @@ export default async function LocaleLayout({
           {children}
           <Footer />
           <BackToTop />
+          <MobileNav />
         </NextIntlClientProvider>
       </body>
     </html>

@@ -18,7 +18,7 @@ export function BackToTop() {
       // so this respects that preference without duplicating the check.
       onClick={() => window.scrollTo({ top: 0 })}
       aria-label={t("backToTop")}
-      className="fixed bottom-6 end-6 z-40 inline-flex h-11 w-11 items-center justify-center rounded-full border border-border bg-surface text-foreground backdrop-blur-md transition-colors hover:border-accent/40 hover:text-accent"
+      className="fixed bottom-20 end-6 z-40 inline-flex h-11 w-11 items-center justify-center rounded-full border border-border bg-surface text-foreground backdrop-blur-md transition-colors hover:border-accent/40 hover:text-accent sm:bottom-6"
     >
       <ArrowUp size={18} aria-hidden="true" />
     </button>
