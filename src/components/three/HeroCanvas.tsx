@@ -26,8 +26,7 @@ function subscribe() {
 
 function getSnapshot(): boolean {
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const isMobileViewport = window.innerWidth < 768;
-  return !reducedMotion && !isMobileViewport && supportsWebGL();
+  return !reducedMotion && supportsWebGL();
 }
 
 function getServerSnapshot(): boolean {
