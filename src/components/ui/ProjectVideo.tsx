@@ -45,7 +45,6 @@ export function ProjectVideo({ mp4Src, webmSrc, poster, className }: ProjectVide
       loop
       playsInline
       preload="metadata"
-      controls
     >
       {webmSrc && <source src={webmSrc} type="video/webm" />}
       <source src={mp4Src} type="video/mp4" />
