@@ -1,23 +1,13 @@
-export type ProjectLink = {
-  label: string;
-  href: string;
-};
-
 export type FlagshipProject = {
   name: string;
   fullName: string;
   tags: string[];
-  links: ProjectLink[];
 };
 
 export const flagshipProject: FlagshipProject = {
   name: "C.I.R.A",
   fullName: "Cloud Incident Response Analyzer",
   tags: ["Cloud Forensics", "Security", "Python", "AWS", "PostgreSQL"],
-  links: [
-    { label: "GitHub", href: "#" },
-    { label: "Live Demo", href: "#" },
-  ],
 };
 
 export type SecondaryProject = {

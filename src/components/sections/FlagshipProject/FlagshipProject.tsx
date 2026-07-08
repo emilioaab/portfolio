@@ -2,7 +2,6 @@ import { useTranslations } from "next-intl";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { WindowFrame } from "@/components/ui/WindowFrame";
 import { Badge } from "@/components/ui/Badge";
-import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
 import { flagshipProject } from "@/content/projects";
 import { ProjectVideo } from "@/components/ui/ProjectVideo";
@@ -37,13 +36,6 @@ export function FlagshipProject() {
                   ))}
                 </div>
                 <p className="text-muted">{t("description")}</p>
-                <div className="mt-2 flex flex-wrap gap-3">
-                  {flagshipProject.links.map((link) => (
-                    <Button key={link.label} href={link.href} variant="secondary" showArrow>
-                      {link.label}
-                    </Button>
-                  ))}
-                </div>
               </div>
 
               <ProjectVideo
