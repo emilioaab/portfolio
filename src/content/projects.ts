@@ -8,7 +8,6 @@ export type FlagshipProject = {
   fullName: string;
   tags: string[];
   links: ProjectLink[];
-  terminalLines: string[];
 };
 
 export const flagshipProject: FlagshipProject = {
@@ -18,12 +17,6 @@ export const flagshipProject: FlagshipProject = {
   links: [
     { label: "GitHub", href: "#" },
     { label: "Live Demo", href: "#" },
-  ],
-  terminalLines: [
-    "$ cira scan --target s3://bucket",
-    "[OK] collecting artifacts...",
-    "[OK] analyzing timeline...",
-    "[!!] 3 anomalies detected",
   ],
 };
 

@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
 import { flagshipProject } from "@/content/projects";
-import { TerminalLines } from "./TerminalLines";
+import { ProjectVideo } from "@/components/ui/ProjectVideo";
 
 export function FlagshipProject() {
   const t = useTranslations("FlagshipProject");
@@ -46,9 +46,11 @@ export function FlagshipProject() {
                 </div>
               </div>
 
-              <TerminalLines
-                lines={flagshipProject.terminalLines}
-                className="md:border-s md:border-border"
+              <ProjectVideo
+                mp4Src="/videos/cira-demo.mp4"
+                webmSrc="/videos/cira-demo.webm"
+                poster="/videos/cira-demo-poster.jpg"
+                className="aspect-video md:border-s md:border-border"
               />
             </div>
           </WindowFrame>
