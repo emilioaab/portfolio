@@ -1,4 +1,16 @@
 {
+  "Metadata": {
+    "title": "אמיל אבדומליקוב — מהנדס תוכנה, אבטחת סייבר",
+    "description": "התיק האישי של אמיל אבדומליקוב, סטודנט להנדסת תוכנה עם התמחות באבטחת סייבר — בונה מערכות מאובטחות ומוצרי פול-סטאק, מאסמבלי x86 ועד Next.js."
+  },
+  "Nav": {
+    "work": "~/work",
+    "projects": "~/projects",
+    "about": "~/about",
+    "stack": "~/stack",
+    "contact": "~/contact",
+    "backToTop": "חזרה למעלה"
+  },
   "Hero": {
     "eyebrow": "whoami",
     "name": "אמיל אבדומליקוב",

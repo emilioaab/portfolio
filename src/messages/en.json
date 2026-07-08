@@ -1,4 +1,16 @@
 {
+  "Metadata": {
+    "title": "Emil Abdumalikov — Software Engineer, Cybersecurity",
+    "description": "Portfolio of Emil Abdumalikov, a software engineering student specializing in cybersecurity — building secure systems and full-stack products, from x86 assembly to Next.js."
+  },
+  "Nav": {
+    "work": "~/work",
+    "projects": "~/projects",
+    "about": "~/about",
+    "stack": "~/stack",
+    "contact": "~/contact",
+    "backToTop": "Back to top"
+  },
   "Hero": {
     "eyebrow": "whoami",
     "name": "Emil Abdumalikov",

@@ -38,6 +38,19 @@ body {
   color: var(--foreground);
 }
 
+/* Offsets anchor-jump scrolling so section tops land below the sticky
+   header instead of underneath it. Smooth scrolling itself is gated
+   behind prefers-reduced-motion. */
+html {
+  scroll-padding-top: 4.5rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 * {
   border-color: var(--color-border);
 }
