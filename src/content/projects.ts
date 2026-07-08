@@ -29,6 +29,7 @@ export const flagshipProject: FlagshipProject = {
 
 export type SecondaryProject = {
   id: string;
+  fileName: string;
   status: "completed" | "in-progress";
   tags: string[];
   href?: string;
@@ -37,9 +38,15 @@ export type SecondaryProject = {
 export const secondaryProjects: SecondaryProject[] = [
   {
     id: "lawFirm",
+    fileName: "law-firm.tsx",
     status: "completed",
     tags: ["Next.js", "TypeScript", "Tailwind"],
     href: "https://yrlegal-website.vercel.app",
   },
-  { id: "musicSync", status: "in-progress", tags: ["Music Tech"] },
+  {
+    id: "musicSync",
+    fileName: "music-sync.tsx",
+    status: "in-progress",
+    tags: ["Music Tech"],
+  },
 ];
