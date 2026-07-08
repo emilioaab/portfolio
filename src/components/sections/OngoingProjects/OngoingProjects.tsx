@@ -11,7 +11,7 @@ export function OngoingProjects() {
 
   return (
     <section id="projects" className="w-full px-6 py-24 sm:px-10">
-      <div className="mx-auto max-w-5xl">
+      <div className="mx-auto max-w-6xl">
         <Reveal>
           <SectionHeading eyebrow="projects" title={t("heading")} description={t("intro")} />
         </Reveal>
