@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { ChevronRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { facets } from "@/content/about";
+import { Ltr } from "@/components/ui/Ltr";
 
 export function AboutFileList() {
   const t = useTranslations("About");
@@ -13,8 +14,10 @@ export function AboutFileList() {
   return (
     <div className="mt-10 border-t border-border">
       <p className="border-b border-border py-3 font-mono text-xs text-muted">
-        <span aria-hidden="true">$ </span>
-        ls -la ~/about
+        <Ltr>
+          <span aria-hidden="true">$ </span>
+          ls -la ~/about
+        </Ltr>
       </p>
 
       {facets.map((facet) => {
@@ -26,18 +29,20 @@ export function AboutFileList() {
               type="button"
               onClick={() => setOpenId(isOpen ? null : facet.id)}
               aria-expanded={isOpen}
-              className="flex w-full items-center gap-3 py-4 text-start font-mono text-sm transition-colors hover:text-accent"
+              className="flex w-full py-4 text-start font-mono text-sm transition-colors hover:text-accent"
             >
-              <ChevronRight
-                size={14}
-                className={cn(
-                  "shrink-0 text-accent transition-transform duration-200",
-                  isOpen && "rotate-90",
-                )}
-                aria-hidden="true"
-              />
-              <span className="text-muted">drwxr-xr-x</span>
-              <span className="text-foreground">{facet.slug}/</span>
+              <span dir="ltr" className="flex items-center gap-3">
+                <ChevronRight
+                  size={14}
+                  className={cn(
+                    "shrink-0 text-accent transition-transform duration-200",
+                    isOpen && "rotate-90",
+                  )}
+                  aria-hidden="true"
+                />
+                <span className="text-muted">drwxr-xr-x</span>
+                <span className="text-foreground">{facet.slug}/</span>
+              </span>
             </button>
 
             {isOpen && (

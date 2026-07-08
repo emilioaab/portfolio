@@ -3,6 +3,7 @@
 import { type FormEvent, useState } from "react";
 import { useTranslations } from "next-intl";
 import { COMMAND_TARGETS } from "@/content/terminal";
+import { Ltr } from "@/components/ui/Ltr";
 
 const PRIMARY_COMMANDS = [
   { command: "work", labelKey: "commandWork", descriptionKey: "commandWorkDesc" },
@@ -53,8 +54,10 @@ export function TerminalPrompt() {
   return (
     <div className="mt-10 flex w-full max-w-md flex-col items-start gap-3 text-start">
       <p className="font-mono text-xs text-muted">
-        <span aria-hidden="true">$ </span>
-        {t("commandsLabel")}
+        <Ltr>
+          <span aria-hidden="true">$ </span>
+          {t("commandsLabel")}
+        </Ltr>
       </p>
 
       <div className="flex w-full flex-col">
@@ -63,23 +66,26 @@ export function TerminalPrompt() {
             key={entry.command}
             type="button"
             onClick={() => navigateTo(COMMAND_TARGETS[entry.command])}
-            className="group flex w-full items-center gap-3 rounded-md px-2 py-2 text-start font-mono text-sm transition-colors hover:bg-surface"
+            className="group flex w-full rounded-md px-2 py-2 text-start font-mono text-sm transition-colors hover:bg-surface"
           >
-            <span className="text-accent">[{index + 1}]</span>
-            <span className="text-foreground">{t(entry.labelKey)}</span>
-            <span className="text-muted transition-transform group-hover:translate-x-0.5">
-              → {t(entry.descriptionKey)}
+            <span dir="ltr" className="flex items-center gap-3">
+              <span className="text-accent">[{index + 1}]</span>
+              <span className="text-foreground">{t(entry.labelKey)}</span>
+              <span className="text-muted transition-transform group-hover:translate-x-0.5">
+                → {t(entry.descriptionKey)}
+              </span>
             </span>
           </button>
         ))}
       </div>
 
-      <form onSubmit={handleSubmit} className="flex w-full items-center gap-2 px-2">
+      <form onSubmit={handleSubmit} dir="ltr" className="flex w-full items-center gap-2 px-2">
         <span className="font-mono text-sm text-accent" aria-hidden="true">
           $
         </span>
         <input
           type="text"
+          dir="auto"
           value={value}
           onChange={(event) => setValue(event.target.value)}
           aria-label={t("promptAriaLabel")}

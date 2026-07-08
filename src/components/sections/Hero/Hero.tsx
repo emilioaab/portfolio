@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import { Reveal } from "@/components/ui/Reveal";
 import { Typewriter } from "@/components/ui/Typewriter";
+import { Ltr } from "@/components/ui/Ltr";
 import { HeroBackground } from "./HeroBackground";
 import { HeroCanvas } from "@/components/three/HeroCanvas";
 import { TerminalPrompt } from "./TerminalPrompt";
@@ -18,8 +19,10 @@ export function Hero() {
 
       <Reveal>
         <p className="font-mono text-sm text-accent">
-          <span aria-hidden="true">$ </span>
-          {t("eyebrow")}
+          <Ltr>
+            <span aria-hidden="true">$ </span>
+            {t("eyebrow")}
+          </Ltr>
         </p>
       </Reveal>
 

@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { cn } from "@/lib/utils";
+import { Ltr } from "@/components/ui/Ltr";
 
 type SectionHeadingProps = {
   eyebrow?: string;
@@ -18,8 +19,10 @@ export function SectionHeading({
     <div className={cn("flex flex-col gap-3", className)}>
       {eyebrow && (
         <p className="font-mono text-sm text-accent">
-          <span aria-hidden="true">$ </span>
-          {eyebrow}
+          <Ltr>
+            <span aria-hidden="true">$ </span>
+            {eyebrow}
+          </Ltr>
         </p>
       )}
       <h2 className="text-2xl font-semibold text-foreground sm:text-3xl">{title}</h2>
