@@ -41,3 +41,15 @@ body {
 * {
   border-color: var(--color-border);
 }
+
+/* Static grid backdrop used behind the Hero, standing in for the WebGL
+   scene until it's built (step 9). Faded via a radial mask so it reads
+   as an accent, not noise. */
+.hero-grid {
+  background-image:
+    linear-gradient(to right, var(--border) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--border) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(ellipse 60% 50% at 50% 40%, black 40%, transparent 100%);
+  -webkit-mask-image: radial-gradient(ellipse 60% 50% at 50% 40%, black 40%, transparent 100%);
+}

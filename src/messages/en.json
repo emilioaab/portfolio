@@ -1,7 +1,10 @@
 {
   "Hero": {
-    "title": "[EN] Hero section placeholder",
-    "subtitle": "[EN] Curious engineer, creative problem solver."
+    "eyebrow": "whoami",
+    "name": "[TODO: Your Name]",
+    "tagline": "[TODO: dual-identity tagline — curious engineer & creative problem solver, from low-level code to full-stack builds.]",
+    "ctaPrimary": "View Work",
+    "ctaSecondary": "Get in Touch"
   },
   "FlagshipProject": {
     "title": "[EN] Flagship project placeholder (C.I.R.A)"

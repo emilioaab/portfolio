@@ -56,11 +56,22 @@ export function Button({
   );
 
   if (href) {
+    const isHash = href.startsWith("#");
     const isExternal = /^https?:\/\//.test(href) || href.startsWith("mailto:");
     const anchorRest = rest as Omit<
       AnchorHTMLAttributes<HTMLAnchorElement>,
       "className" | "children" | "href"
     >;
+
+    // Same-page anchors bypass next-intl's Link: it prefixes internal
+    // hrefs with the locale, which would break a bare "#section" hash.
+    if (isHash) {
+      return (
+        <a href={href} className={classes} {...anchorRest}>
+          {content}
+        </a>
+      );
+    }
 
     if (isExternal) {
       return (
