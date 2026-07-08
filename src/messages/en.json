@@ -7,10 +7,19 @@
     "ctaSecondary": "Get in Touch"
   },
   "FlagshipProject": {
-    "title": "[EN] Flagship project placeholder (C.I.R.A)"
+    "heading": "Flagship Project",
+    "intro": "[TODO: one-line framing for why this project matters]",
+    "description": "[TODO: C.I.R.A description — what it does, the forensics/security angle, key outcomes]"
   },
   "OngoingProjects": {
-    "title": "[EN] Ongoing projects placeholder"
+    "heading": "Always Building",
+    "intro": "[TODO: intro line about ongoing work]",
+    "inProgress": "In Progress",
+    "comingSoon": "More in the pipeline",
+    "musicSync": {
+      "name": "Music Synchronization Platform",
+      "description": "[TODO: description of the music sync platform]"
+    }
   },
   "About": {
     "title": "[EN] About / diverse curiosity placeholder"
