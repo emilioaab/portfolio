@@ -1,21 +1,26 @@
 {
   "Hero": {
     "eyebrow": "whoami",
-    "name": "[TODO: Your Name]",
-    "tagline": "[TODO: dual-identity tagline — curious engineer & creative problem solver, from low-level code to full-stack builds.]",
+    "name": "Emil Abdumalikov",
+    "tagline": "Software engineering student specializing in cybersecurity — equally at home in x86 assembly and a Next.js frontend, building secure systems and creative software across the stack.",
     "ctaPrimary": "View Work",
     "ctaSecondary": "Get in Touch"
   },
   "FlagshipProject": {
     "heading": "Flagship Project",
-    "intro": "[TODO: one-line framing for why this project matters]",
-    "description": "[TODO: C.I.R.A description — what it does, the forensics/security angle, key outcomes]"
+    "intro": "My final-year project: a full pipeline from raw AWS logs to actionable incident response.",
+    "description": "C.I.R.A is an automated cloud forensics system that bridges static CSPM monitoring with dynamic incident response. It normalizes large-scale AWS log data into a unified anomaly-detection pipeline and collects evidence in real time via AWS SSM — cutting mean time to resolution for cloud security incidents."
   },
   "OngoingProjects": {
-    "heading": "Always Building",
-    "intro": "[TODO: intro line about ongoing work]",
-    "inProgress": "In Progress",
+    "heading": "What I'm Building",
+    "intro": "A mix of shipped work and things still taking shape.",
+    "statusCompleted": "Completed",
+    "statusInProgress": "In Progress",
     "comingSoon": "More in the pipeline",
+    "lawFirm": {
+      "name": "Yehuda Raveh & Co. — Law Firm Platform",
+      "description": "A fully responsive, bilingual web platform with secure server-side contact handling, deployed on Vercel with CI/CD."
+    },
     "musicSync": {
       "name": "Music Synchronization Platform",
       "description": "[TODO: description of the music sync platform]"
@@ -23,23 +28,23 @@
   },
   "About": {
     "heading": "Beyond the Code",
-    "intro": "[TODO: intro framing — one engineer, many facets]",
+    "intro": "One engineer, a handful of disciplines that all feed each other.",
     "facets": {
       "cybersecurity": {
         "title": "Cybersecurity",
-        "description": "[TODO]"
+        "description": "My B.Sc. specialization — cryptography, network security, and secure coding practice, with C.I.R.A as the practical output of that focus."
       },
       "lowLevel": {
         "title": "Low-Level Systems",
-        "description": "[TODO]"
+        "description": "Comfortable below the abstraction layer — C, C++, and x86 Assembly, with a working understanding of memory management and OS architecture."
       },
       "fullStack": {
         "title": "Full-Stack Development",
-        "description": "[TODO]"
+        "description": "From FastAPI backends to Next.js frontends — I've shipped real, deployed products end to end, including a bilingual platform live on Vercel."
       },
       "music": {
         "title": "Music — Drums & Guitar",
-        "description": "[TODO]"
+        "description": "I teach drums professionally at Yuval Arts, designing curriculums and mentoring students in technique and discipline — the same patience shows up in my engineering."
       },
       "fitness": {
         "title": "Fitness",
@@ -49,7 +54,7 @@
   },
   "TechStack": {
     "heading": "Tech Stack",
-    "intro": "[TODO: intro line about the stack]",
+    "intro": "What I reach for, grouped by where it runs.",
     "categories": {
       "languages": "Languages",
       "cloud": "Cloud & Infra",
@@ -59,7 +64,7 @@
   },
   "Contact": {
     "heading": "Let's Connect",
-    "intro": "[TODO: closing statement / call to action framing]",
+    "intro": "Open to student and part-time roles — reach out if you want to talk security, systems, or code.",
     "ctaPrimary": "Send an Email",
     "links": {
       "email": "Email",
@@ -68,6 +73,6 @@
     }
   },
   "Footer": {
-    "line": "© {year} — designed & built by [TODO: Your Name]"
+    "line": "© {year} — designed & built by Emil Abdumalikov"
   }
 }

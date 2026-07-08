@@ -24,15 +24,16 @@ export function FlagshipProject() {
         <Reveal delay={0.1}>
           <Card className="mt-10 grid gap-8 md:grid-cols-2 md:items-center">
             <div className="flex flex-col gap-4">
-              <div className="flex flex-wrap items-center gap-3">
+              <div>
                 <h3 className="text-2xl font-semibold text-foreground">
                   {flagshipProject.name}
                 </h3>
-                <div className="flex flex-wrap gap-2">
-                  {flagshipProject.tags.map((tag) => (
-                    <Badge key={tag}>{tag}</Badge>
-                  ))}
-                </div>
+                <p className="font-mono text-xs text-muted">{flagshipProject.fullName}</p>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {flagshipProject.tags.map((tag) => (
+                  <Badge key={tag}>{tag}</Badge>
+                ))}
               </div>
               <p className="text-muted">{t("description")}</p>
               <div className="mt-2 flex flex-wrap gap-3">

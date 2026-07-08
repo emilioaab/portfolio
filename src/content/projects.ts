@@ -5,6 +5,7 @@ export type ProjectLink = {
 
 export type FlagshipProject = {
   name: string;
+  fullName: string;
   tags: string[];
   links: ProjectLink[];
   terminalLines: string[];
@@ -12,7 +13,8 @@ export type FlagshipProject = {
 
 export const flagshipProject: FlagshipProject = {
   name: "C.I.R.A",
-  tags: ["Cloud Forensics", "Security"],
+  fullName: "Cloud Incident Response Analyzer",
+  tags: ["Cloud Forensics", "Security", "Python", "AWS"],
   links: [
     { label: "GitHub", href: "#" },
     { label: "Live Demo", href: "#" },
@@ -25,11 +27,14 @@ export const flagshipProject: FlagshipProject = {
   ],
 };
 
-export type OngoingProject = {
+export type SecondaryProject = {
   id: string;
+  status: "completed" | "in-progress";
   tags: string[];
+  href?: string;
 };
 
-export const ongoingProjects: OngoingProject[] = [
-  { id: "musicSync", tags: ["Music Tech"] },
+export const secondaryProjects: SecondaryProject[] = [
+  { id: "lawFirm", status: "completed", tags: ["Next.js", "TypeScript", "Tailwind"] },
+  { id: "musicSync", status: "in-progress", tags: ["Music Tech"] },
 ];
