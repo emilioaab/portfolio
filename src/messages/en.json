@@ -17,6 +17,7 @@
     "statusCompleted": "Completed",
     "statusInProgress": "In Progress",
     "comingSoon": "More in the pipeline",
+    "visitSite": "Visit Site",
     "lawFirm": {
       "name": "Yehuda Raveh & Co. — Law Firm Platform",
       "description": "A fully responsive, bilingual web platform with secure server-side contact handling, deployed on Vercel with CI/CD."

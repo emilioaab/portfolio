@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Card } from "@/components/ui/Card";
 import { Badge } from "@/components/ui/Badge";
+import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
 import { secondaryProjects } from "@/content/projects";
 
@@ -26,10 +27,15 @@ export function OngoingProjects() {
                   {t(`${project.id}.name`)}
                 </h3>
                 <p className="text-muted">{t(`${project.id}.description`)}</p>
-                <div className="mt-auto flex flex-wrap gap-2 pt-2">
+                <div className="mt-auto flex flex-wrap items-center gap-2 pt-2">
                   {project.tags.map((tag) => (
                     <Badge key={tag}>{tag}</Badge>
                   ))}
+                  {project.href && (
+                    <Button href={project.href} variant="ghost" showArrow className="ms-auto px-0">
+                      {t("visitSite")}
+                    </Button>
+                  )}
                 </div>
               </Card>
             </Reveal>

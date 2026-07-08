@@ -35,6 +35,11 @@ export type SecondaryProject = {
 };
 
 export const secondaryProjects: SecondaryProject[] = [
-  { id: "lawFirm", status: "completed", tags: ["Next.js", "TypeScript", "Tailwind"] },
+  {
+    id: "lawFirm",
+    status: "completed",
+    tags: ["Next.js", "TypeScript", "Tailwind"],
+    href: "https://yrlegal-website.vercel.app",
+  },
   { id: "musicSync", status: "in-progress", tags: ["Music Tech"] },
 ];
