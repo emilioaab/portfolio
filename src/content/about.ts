@@ -1,14 +1,14 @@
-import { Shield, Cpu, Code2, Music2, Dumbbell, type LucideIcon } from "lucide-react";
-
 export type Facet = {
   id: string;
-  icon: LucideIcon;
+  // Directory-style label, kept literal/untranslated like the nav's ~/work
+  // convention — these read as real path segments, not UI copy.
+  slug: string;
 };
 
 export const facets: Facet[] = [
-  { id: "cybersecurity", icon: Shield },
-  { id: "lowLevel", icon: Cpu },
-  { id: "fullStack", icon: Code2 },
-  { id: "music", icon: Music2 },
-  { id: "fitness", icon: Dumbbell },
+  { id: "cybersecurity", slug: "cybersecurity" },
+  { id: "lowLevel", slug: "low-level-systems" },
+  { id: "fullStack", slug: "full-stack" },
+  { id: "music", slug: "music" },
+  { id: "fitness", slug: "fitness" },
 ];

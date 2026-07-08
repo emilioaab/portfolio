@@ -1,11 +1,7 @@
 import { useTranslations } from "next-intl";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { Card } from "@/components/ui/Card";
 import { Reveal } from "@/components/ui/Reveal";
-import { facets } from "@/content/about";
-import { cn } from "@/lib/utils";
-
-const featuredFacetId = "cybersecurity";
+import { AboutFileList } from "./AboutFileList";
 
 export function About() {
   const t = useTranslations("About");
@@ -17,37 +13,9 @@ export function About() {
           <SectionHeading eyebrow="about" title={t("heading")} description={t("intro")} />
         </Reveal>
 
-        <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-6">
-          {facets.map((facet, index) => {
-            const Icon = facet.icon;
-            const isFeatured = facet.id === featuredFacetId;
-
-            return (
-              <Reveal
-                key={facet.id}
-                delay={index * 0.06}
-                className={isFeatured ? "sm:col-span-3 sm:row-span-2" : "sm:col-span-3"}
-              >
-                <Card hover className="flex h-full flex-col gap-3">
-                  <Icon
-                    className="text-accent"
-                    size={isFeatured ? 28 : 22}
-                    aria-hidden="true"
-                  />
-                  <h3
-                    className={cn(
-                      "font-semibold text-foreground",
-                      isFeatured ? "text-2xl" : "text-lg",
-                    )}
-                  >
-                    {t(`facets.${facet.id}.title`)}
-                  </h3>
-                  <p className="text-muted">{t(`facets.${facet.id}.description`)}</p>
-                </Card>
-              </Reveal>
-            );
-          })}
-        </div>
+        <Reveal delay={0.1}>
+          <AboutFileList />
+        </Reveal>
       </div>
     </section>
   );
