@@ -42,9 +42,10 @@ body {
   border-color: var(--color-border);
 }
 
-/* Static grid backdrop used behind the Hero, standing in for the WebGL
-   scene until it's built (step 9). Faded via a radial mask so it reads
-   as an accent, not noise. */
+/* Static grid backdrop used behind the Hero — the always-present base
+   layer; the WebGL network scene (HeroCanvas) is a progressive
+   enhancement layered on top when supported. Faded via a radial mask
+   so it reads as an accent, not noise. */
 .hero-grid {
   background-image:
     linear-gradient(to right, var(--border) 1px, transparent 1px),
@@ -67,4 +68,17 @@ body {
 
 .animate-blink {
   animation: blink 1s step-end infinite;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 700ms ease forwards;
 }

@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
 import { HeroBackground } from "./HeroBackground";
+import { HeroCanvas } from "@/components/three/HeroCanvas";
 
 export function Hero() {
   const t = useTranslations("Hero");
@@ -12,6 +13,7 @@ export function Hero() {
       className="relative flex min-h-[85dvh] flex-col items-center justify-center overflow-hidden px-6 py-20 text-center sm:px-10"
     >
       <HeroBackground />
+      <HeroCanvas />
 
       <Reveal>
         <p className="font-mono text-sm text-accent">
