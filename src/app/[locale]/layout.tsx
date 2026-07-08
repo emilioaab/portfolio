@@ -3,7 +3,6 @@ import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { Geist, Geist_Mono, Rubik } from "next/font/google";
 import { notFound } from "next/navigation";
 import { routing, rtlLocales, type Locale } from "@/i18n/routing";
-import { themeInitScript } from "@/lib/theme-script";
 import { Header } from "@/components/layout/Header";
 import "../globals.css";
 
@@ -52,9 +51,6 @@ export default async function LocaleLayout({
       dir={dir}
       className={`${geistSans.variable} ${geistMono.variable} ${rubik.variable} h-full antialiased`}
     >
-      <head>
-        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
-      </head>
       <body className="min-h-full flex flex-col">
         <NextIntlClientProvider locale={locale}>
           <Header />
